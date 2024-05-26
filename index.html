@@ -5,109 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma Page Simple</title>
 </head>
-    <body>
-        <h1>Hello World</h1>
+<body>
+    <h1>Hello World</h1>
 
-            <h2>JEU</h2>
-                <h3>Couleurs</h3>
-                    <p>Texte.</p>
+    <h2>I-JEU</h2>
+    <h3>Couleurs</h3>
+    <pre>Texte.<pre>
+<h2>II-CODE</h2><h3>(un)Compil:</h3><pre>EXTRACTION: 
+    quickbms -w [BMS] [PKG.IDX] [OUT]<br>
+INJECTION:
+    quickbms -G -w -r -r -r [BMS] [PKG.IDX] [OUT]</pre><h3>Client.ini</h3><pre>Lignes à modifier:
+    FullScreenMode=1
+//si barre des tâches à droite
+    ScreenWidth=1862
+    ScreenHeight=1080
+//si barre des tâches en bas
+    ScreenWidth=1920
+    ScreenHeight=1022
+    ShadowLevel=1
+    ShadowType=1
+    MaxAnisotropic=1
+    PPMonochrome=0
+    FpsLockValue=900
+    DynamicVideoSetting=0
+    ScreenLevel=0
+    ElfPage=0
+    Renderer=0
+    DetailAttrRefreshTime=0.5</pre><h3>Monstres intéressants</h3><pre>
+Models:
+    M029 = Gélapin
+    M333 = Rien
+    M461 = Ballon de Foot
+    M476 = Zone sol rose
+    M478 = Transfo Chrono
+    M600 = Bulle lumière
+    M618 = Zone sol rotation lente
+    M619 = Zone sol rotation rapide
+IDs:
+    51936 = Coffre TDB 25
+    52219 = Coffre TDB 26
+    52220 = Coffre TDB 27
+    52221 = Coffre TDB 28
+    52222 = Coffre TDB 29
+    52223 = Coffre TDB 30
 
-            <h2>CODE</h2>
-                <h3>(un)Compil:</h3>
-                    <p>EXTRACTION: quickbms -w [BMS] [PKG.IDX] [OUT]</p>
-                    <p>INJECT: quickbms -G -w -r -r -r [BMS] [PKG.IDX] [OUT]</p>
-                <h3>Client.ini</h3>
-                    <p>Lignes à modifier:
-                        FullScreenMode=1
-                        //si barre des tâches à droite
-                        ScreenWidth=1862
-                        ScreenHeight=1080
-                        //si barre des tâches en bas
-                        ScreenWidth=1920
-                        ScreenHeight=1022
-                        ShadowLevel=1
-                        ShadowType=1
-                        MaxAnisotropic=1
-                        PPMonochrome=0
-                        FpsLockValue=900
-                        DynamicVideoSetting=0
-                        ScreenLevel=0
-                        ElfPage=0
-                        Renderer=0
-                        DetailAttrRefreshTime=0.5
-                    </p>
-                <h3>Monstres intéressants</h3>
-                    <p>Models:
-                        M029 = Gélapin
-                        M333 = Rien
-                        M461 = Ballon de Foot
-                        M476 = Zone sol rose
-                        M478 = Transfo Chrono
-                        M600 = Bulle lumière
-                        M618 = Zone sol rotation lente
-                        M619 = Zone sol rotation rapide
-                            IDs:
-                        51936 = Coffre TDB 25
-                        52219 = Coffre TDB 26
-                        52220 = Coffre TDB 27
-                        52221 = Coffre TDB 28
-                        52222 = Coffre TDB 29
-                        52223 = Coffre TDB 30
-                        
-                        53752 = Coffre Siwa Réinca Boss1
-                        53753 = Coffre Siwa Réinca Boss2
-                        53754 = Coffre Siwa Réinca Boss3
-                        53755 = Coffre Siwa Réinca Boss4
-                    </p>
-                <h3>WOL</h3>
-                    <p>script Powershell:
-                        # Paramètres
-                        $adresseIP = "[IP]"
-                        $portUDP = [7-9]
-                        $adresseMAC = "[MAC]"
-                        
-                        # Convertir l'adresse MAC en tableau de bytes
-                        $adresseMACBytes = $adresseMAC -split ':' | ForEach-Object { [byte]('0x' + $_) }
-                        
-                        # Fonction pour envoyer le paquet WOL
-                        function Send-WOLMagicPacket {
-                            param (
-                                [byte[]]$MACAddress
-                            )
-                            
-                            # Créer le tableau de bytes pour le paquet WOL
-                            $magicPacket = @(0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF)
-                            
-                            # Répéter l'adresse MAC 16 fois dans le paquet
-                            1..16 | ForEach-Object {
-                                $magicPacket += $MACAddress
-                            }
-                            
-                            # Créer l'objet UDP client
-                            $udpClient = New-Object System.Net.Sockets.UdpClient
-                            
-                            try {
-                                # Envoyer le paquet WOL
-                                $udpClient.Connect($adresseIP, $portUDP)
-                                $udpClient.Send($magicPacket, $magicPacket.Length)
-                                Write-Host ("Paquet WOL envoyé avec succès à ${adresseIP}:${portUDP} pour ${adresseMAC}.")
-                            } catch {
-                                Write-Host ("Erreur lors de l'envoi du paquet WOL : $($_.Exception.Message)")
-                            } finally {
-                                $udpClient.Close()
-                            }
-                        }
-                        
-                        # Appeler la fonction Send-WOLMagicPacket avec l'adresse MAC spécifiée
-                        Send-WOLMagicPacket -MACAddress $adresseMACBytes
-                    </p>
-        
-            <h2>DATA\DB</h2>
-                <h3>Couleurs</h3>
-                    <p>Texte.</p>
+    53752 = Coffre Siwa Réinca Boss1
+    53753 = Coffre Siwa Réinca Boss2
+    53754 = Coffre Siwa Réinca Boss3
+    53755 = Coffre Siwa Réinca Boss4</pre><h3>WOL</h3><pre>script Powershell:
+    # Paramètres
+    $adresseIP = "[IP]"
+    $portUDP = [7-9]
+    $adresseMAC = "[MAC]"
 
-            <h2>DATA\TRANSLATE</h2>
-                <h3>Couleurs</h3>
-                    <p>Texte.</p>
-    </body>
+    # Convertir l'adresse MAC en tableau de bytes
+    $adresseMACBytes = $adresseMAC -split ':' | ForEach-Object { [byte]('0x' + $_) }
+
+    # Fonction pour envoyer le paquet WOL
+    function Send-WOLMagicPacket {
+        param (
+            [byte[]]$MACAddress
+        )
+
+        # Créer le tableau de bytes pour le paquet WOL
+        $magicPacket = @(0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF)
+
+        # Répéter l'adresse MAC 16 fois dans le paquet
+        1..16 | ForEach-Object {
+            $magicPacket += $MACAddress
+        }
+
+        # Créer l'objet UDP client
+        $udpClient = New-Object System.Net.Sockets.UdpClient
+
+        try {
+            # Envoyer le paquet WOL
+            $udpClient.Connect($adresseIP, $portUDP)
+            $udpClient.Send($magicPacket, $magicPacket.Length)
+            Write-Host ("Paquet WOL envoyé avec succès à ${adresseIP}:${portUDP} pour ${adresseMAC}.")
+        } catch {
+            Write-Host ("Erreur lors de l'envoi du paquet WOL : $($_.Exception.Message)")
+        } finally {
+            $udpClient.Close()
+        }
+    }
+
+    # Appeler la fonction Send-WOLMagicPacket avec l'adresse MAC spécifiée
+    Send-WOLMagicPacket -MACAddress $adresseMACBytes</pre><h2>III-DATA\DB</h2><h3>C_Item.ini</h3><pre>Sac LovCo 14emp => Sac Sprite
+    36348|A00035||G00005||||UI034|||21
+    36348|A00035||G00005||||UI034|||47<pre><h2>IV-DATA\TRANSLATE</h2>
+    <h3>Couleurs</h3>
+    <pre>Texte.<pre>
+    <div>rvnoumsvn</div>
+</body>
 </html>
