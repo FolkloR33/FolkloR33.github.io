@@ -1,0 +1,23 @@
+/* Style pour le tableau */
+table {
+    border-collapse: collapse;
+    width: 100%; /* Largeur totale du tableau */
+}
+
+/* Style pour les en-têtes */
+th {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Style pour les cellules */
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Définir une largeur minimale pour les colonnes */
+td, th {
+    min-width: 80px; /* Changer la valeur selon votre préférence */
+}
