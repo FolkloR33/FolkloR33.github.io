@@ -6,18 +6,20 @@ table {
 
 /* Style pour les en-têtes */
 th {
-    padding: 8px;
-    text-align: left;
-    border: 1px solid #ddd;
+    color: azure;
+    background-color: rgb(55, 55, 55);
+    padding: 0.3rem;
+    text-align: center;
+    border: 2px solid #b4b4b4;
 }
 
 /* Style pour les cellules */
 td {
-    padding: 8px;
-    border: 1px solid #ddd;
+    padding: 0.3rem;
+    border: 2px solid #b4b4b4;
 }
 
 /* Définir une largeur minimale pour les colonnes */
 td, th {
-    min-width: 80px; /* Changer la valeur selon votre préférence */
+    min-width: 10px; /* Changer la valeur selon votre préférence */
 }

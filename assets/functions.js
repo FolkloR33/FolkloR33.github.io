@@ -19,9 +19,10 @@ function createTable(rows, cols, headers, data, containerId) {
     container.innerHTML += tableContent;
 }
 
+// Fonction pour générer les en-têtes
 function generateHeaders(colCount, prefix) {
     const headers = [];
-    for (let i = 1; i <= colCount; i++) {
+    for (let i = 0; i < colCount; i++) { // Commencer le décompte à partir de 0
         headers.push(prefix + ' ' + i);
     }
     return headers;

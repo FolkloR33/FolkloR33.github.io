@@ -1,4 +1,8 @@
 // Generating a second table with n columns and fill it with some data
-const headers2 = generateHeaders(63, '');
-const data2 = [['ID', '']]; // Insérer vos données ici
-createTable(1, 63, headers2, data2, 'tablesContainer');
+const headers2 = generateHeaders(64, '');
+const data2 = [
+    ['[effet]              =>', 'id', 'icon', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+    ['[targeted_file]      =>', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+
+];
+createTable(2, 64, headers2, data2, 'tablesContainer');
