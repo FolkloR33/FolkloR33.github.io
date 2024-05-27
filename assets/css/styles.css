@@ -7,30 +7,12 @@ header {
     display: block;
 }
     /* Style pour le tableau */
-table {
-    border-collapse: collapse;
-    width: 100%; /* Largeur totale du tableau */
-}
 
-/* Style pour les en-têtes */
-th {
-    color: azure;
-    background-color: rgb(55, 55, 55);
-    padding: 0.3rem;
-    text-align: center;
-    border: 2px solid #b4b4b4;
-    min-width: 10px;
-}
-
-/* Style pour les cellules */
-td {
-    padding: 0.3rem;
-    border: 2px solid #b4b4b4;
-    min-width: 10px;
-}
 
 h1 {
-    letter-spacing: 6px;
+    letter-spacing: 3px;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
