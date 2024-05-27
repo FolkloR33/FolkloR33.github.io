@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Charger et insérer le header
-    loadTemplate('header_template', 'header');
+    loadTemplate('../header_template', 'header');
 
     // Charger et insérer le footer
-    loadTemplate('footer_template', 'footer');
+    loadTemplate('../footer_template', 'footer');
 });
