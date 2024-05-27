@@ -1,4 +1,12 @@
-/* Style pour le tableau */
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgb(52, 52, 52);
+    display: block;
+}
+    /* Style pour le tableau */
 table {
     border-collapse: collapse;
     width: 100%; /* Largeur totale du tableau */
@@ -11,15 +19,24 @@ th {
     padding: 0.3rem;
     text-align: center;
     border: 2px solid #b4b4b4;
+    min-width: 10px;
 }
 
 /* Style pour les cellules */
 td {
     padding: 0.3rem;
     border: 2px solid #b4b4b4;
+    min-width: 10px;
 }
 
-/* Définir une largeur minimale pour les colonnes */
-td, th {
-    min-width: 10px; /* Changer la valeur selon votre préférence */
+h1 {
+    letter-spacing: 6px;
+}
+
+
+
+
+footer {
+    background-color: rgb(52, 52, 52);
+    display: block;
 }
