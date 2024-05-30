@@ -1,20 +1,26 @@
-*{
+@font-face {
+    font-family: "Acme";
+    src: url(/assets/fonts/Acme.ttf);
+  }
+
+* {
     margin: 0;
     padding: 0;
 }
 
 footer, header {
-    background-color: rgb(149, 95, 13);
+    background-color: rgb(115, 115, 115);
     display: block;
     color: aliceblue;
 }
 
 h1 {
-    display: flex;
-    text-align: center;
+    color: rgb(175, 181, 23);
+    font-family: "Acme";
+    font-size: 3rem;
+    text-align: left;
     letter-spacing: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 10px 0 0 20px;
+    padding: 0px 0 0 20px;
 }
 
 .flexbox,
@@ -28,10 +34,8 @@ h1 {
   min-height: 0px;
 }
 
-.flexbox .title {
-    display: flex;
-
-
+.onglets a {
+    text-decoration: none;
 }
 
 /* FLEXBOX */
@@ -39,13 +43,15 @@ h1 {
 .flexbox ul {
   display: flex;
   list-style: none;
+  align-items: end;
+  width: 100%;
 }
 
 .flexbox .onglets li {
   height: 30px;
   width: 120px;
   padding: 0;
-  margin: 20px;
+  margin: 20px 20px 20px 20px ;
   background: rgb(201, 201, 201);
   /* Centrer un unique élément verticalement et horizontalement */
   display: flex;
@@ -53,14 +59,17 @@ h1 {
   align-items: center;
 }
 
-nav {
-    display: block;
-}
-
-aside {
+.left {
     background: #1f1f1f;
     color: aliceblue;
-    min-width: 120px;
+    min-width: 150px;
+    min-height: 650px;
+}
+
+.right {
+    background: #1f1f1f;
+    color: aliceblue;
+    min-width: 150px;
     min-height: 650px;
 }
 
@@ -70,9 +79,8 @@ aside {
 
 main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* pour centrer verticalement */
+
+
 }
 
 section {
