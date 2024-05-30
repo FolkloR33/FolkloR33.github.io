@@ -6,10 +6,11 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 footer, header {
-    background-color: rgb(115, 115, 115);
+    background-color: #c9c9c9;
     display: block;
     color: aliceblue;
 }
@@ -19,8 +20,13 @@ h1 {
     font-family: "Acme";
     font-size: 3rem;
     text-align: left;
-    letter-spacing: 5px;
-    padding: 0px 0 0 20px;
+    letter-spacing: 10px;
+    padding: 0px 0px 0px 20%;
+    text-shadow: 4px 4px 4px #00000091;
+}
+
+.title {
+    text-align: center;
 }
 
 .flexbox,
@@ -34,8 +40,8 @@ h1 {
   min-height: 0px;
 }
 
-.onglets a {
-    text-decoration: none;
+ a {
+    text-decoration: none !important; 
 }
 
 /* FLEXBOX */
@@ -52,26 +58,21 @@ h1 {
   width: 120px;
   padding: 0;
   margin: 20px 20px 20px 20px ;
-  background: rgb(201, 201, 201);
+  background: rgb(142, 142, 142);
   /* Centrer un unique élément verticalement et horizontalement */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.left {
+aside {
     background: #1f1f1f;
     color: aliceblue;
-    min-width: 150px;
-    min-height: 650px;
+    min-width: 150px ;
+    min-height: 487.5px;
 }
 
-.right {
-    background: #1f1f1f;
-    color: aliceblue;
-    min-width: 150px;
-    min-height: 650px;
-}
+
 
 .right {
     justify-content: end;
@@ -85,4 +86,11 @@ main {
 
 section {
     flex-grow: 1;
+}
+
+h2 {
+
+    margin: 10px 0px 0px 0px;
+    font-family: "Acme";
+    font-size: 1.8rem;
 }

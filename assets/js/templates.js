@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     }
     // Charger et insérer le header
-    loadTemplate('_header', 'header');
+    loadTemplate('/_header', 'header');
     // Charger et insérer le aside droit
-    loadTemplate('_right_aside', 'aside.right');
+    loadTemplate('/_right_aside', 'aside.right');
     // Charger et insérer le footer
-    loadTemplate('_footer', 'footer');
+    loadTemplate('/_footer', 'footer');
 });

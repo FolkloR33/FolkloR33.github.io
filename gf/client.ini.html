@@ -4,29 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OptiGF</title>
-    <link rel="stylesheet" href="/assets/css/styles.css" defer />
-    <script src="/assets/js/templates.js" defer> </script>
+    <script src="/assets/js/templates.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
     <link rel="icon" href="/assets/img/logo.png" />
   </head>
+
   <body>
     <header></header>
 
-    <section>
-      <h2>Grand Fantasia</h2>
-    </section>
-
-    <aside class="lateral">
-      <h4>Sections :</h4>
-      <ul>
-        <li><a href="/gf/client.ini.html">Client.ini</a></li>
-        <li><a href="/gf/inject.html">Injections</a></li>
-        <li><a href="/gf/ui.html">UserInterface (UI)</a></li>
-        <li><a href="/gf/parser.html">Parses [C_T_].ini</a></li>
-      </ul>
-    </aside>
-    
     <main>
-      <h4>Client.ini (lignes à modifier en rouge) :</h4>
+      <aside style="text-align: center;" class="left">
+        <h4 style="font-size: 1.5rem; margin: 10px 0px 10px 0px; text-decoration: underline; ">
+          <em>Sections :</em>
+        </h4>
+        <ul>
+          <li><a href="/gf/client.ini.html">Client.ini</a></li>
+          <li><a href="/gf/inject.html">Injections</a></li>
+          <li><a href="/gf/ui.html">UI</a></li>
+          <li><a href="/gf/parser.html">[Parses].ini</a></li>
+        </ul>
+      </aside>
+      <section class="flexbox">
+        <div class="title">
+          <h2>Client.ini <img src="/assets/img/gf.png" alt="icon" height="28" /></h2>
+        <p>Fichier traduit répertoriant les options du jeu <em>(les lignes à modifier sont en rouge) </em>:</p>
+        </div>
       <pre>
 [Connect]
 <strong>ServerNum=1</strong>  // Numéro du serveur à connecter
@@ -168,7 +170,12 @@
 <strong>PKPalaceOpponentListPosX=1542</strong>  // Position X de la liste des adversaires dans le PK Palace
 <strong>PKPalaceOpponentListPosY=63</strong>  // Position Y de la liste des adversaires dans le PK Palace
       </pre>
+        
+      </section>
+      <aside class="right"></aside>
     </main>
-  <footer></footer>
+
+    <footer></footer>
   </body>
 </html>
+
