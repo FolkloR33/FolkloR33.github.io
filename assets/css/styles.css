@@ -2,99 +2,144 @@
     font-family: "Acme";
     src: url(/assets/fonts/Acme.ttf);
   }
-
 * {
     margin: 0;
     padding: 0;
     list-style: none;
+		text-decoration: none;
+}
+body {
+	background-color: #1f1f1f;
 }
 
-footer, header {
-    background-color: #c9c9c9;
-    display: block;
-    color: aliceblue;
+.flexbox {
+    display: flex;
 }
-
+header {
+    display: flex;
+    background-color: #5c5c5c;
+}
+.onglets {
+    display: flex;
+    align-items: center;
+}
 h1 {
-    color: rgb(175, 181, 23);
+    color: rgb(0, 0, 0);
     font-family: "Acme";
-    font-size: 3rem;
-    text-align: left;
-    letter-spacing: 10px;
-    padding: 0px 0px 0px 20%;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 5px;
     text-shadow: 4px 4px 4px #00000091;
 }
-
 .title {
     text-align: center;
 }
-
-.flexbox,
-.grid,
-.absolute,
-.onglets {
-  border: 0px solid rgb(0, 0, 0);
-  border-radius: 0px;
-  padding: 0px;
-  margin-top: 0px;
-  min-height: 0px;
+p, pre, span{
+	font-size: 1.2rem;
+	color: aliceblue;
+	text-decoration: none !important;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.left {
+	grid-column: 1;
+	
+}
+.middle {
+	grid-column: 2;
+}
+.right {
+  grid-column: 3;
 }
 
- a {
-    text-decoration: none !important; 
+
+
+/* éléments uniques */
+
+.SIDE li {
+	margin-left: 20px;
+	padding: 0 0 0 10px;
+	border-left: 1px solid ;
 }
 
-/* FLEXBOX */
-/* Sert a répartir équitablement des éléments sur la page */
-.flexbox ul {
-  display: flex;
-  list-style: none;
-  align-items: end;
-  width: 100%;
+.onglets p {
+	color: aliceblue;
+	font-size: 1.2rem;
 }
 
-.flexbox .onglets li {
-  height: 30px;
-  width: 120px;
-  padding: 0;
-  margin: 20px 20px 20px 20px ;
-  background: rgb(142, 142, 142);
-  /* Centrer un unique élément verticalement et horizontalement */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.onglets a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+
+.onglets li {
+    height: 30px;
+    width: 120px;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 10px 0px 0px ;
+    /* background: rgb(142, 142, 142); */
+    /* Centrer un unique élément verticalement et horizontalement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+		border-color: aliceblue;
+		border: 1px solid aliceblue;
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "i1 i2";
 }
 
 aside {
-    background: #1f1f1f;
+    background: #191919;
     color: aliceblue;
-    min-width: 150px ;
-    min-height: 487.5px;
+		padding: 50px 0 0 50px;
 }
 
 
-
-.right {
-    justify-content: end;
-}
-
-main {
-    display: flex;
-
-
-}
-
-section {
-    flex-grow: 1;
-}
 
 h2 {
-
     margin: 10px 0px 0px 0px;
     font-family: "Acme";
     font-size: 1.8rem;
+		color: aliceblue;
+}
+h4 {
+	font-size: 2rem; margin: 10px 0px 10px 0px;
 }
 
-404 {
-    bac
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #5c5c5c;
+    display: block;
+    color: aliceblue;
 }
