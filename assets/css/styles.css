@@ -2,6 +2,10 @@
     font-family: "Acme";
     src: url(/assets/fonts/Acme.ttf);
   }
+  @font-face {
+    font-family: "JosefinSans-VariableFont_wght";
+    src: url(/assets/fonts/JosefinSans-VariableFont_wght.ttf);
+  }
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +14,7 @@
 }
 body {
 	background-color: #1f1f1f;
+  
 }
 
 .flexbox {
@@ -46,7 +51,7 @@ p, pre, span{
 }
 .left {
 	grid-column: 1;
-	
+
 }
 .middle {
 	grid-column: 2;
@@ -78,7 +83,7 @@ p, pre, span{
 
 .onglets li {
     height: 30px;
-    width: 120px;
+    width: 130px;
     padding: 0px 10px 0px 10px;
     margin: 0px 10px 0px 0px ;
     /* background: rgb(142, 142, 142); */
@@ -93,21 +98,22 @@ p, pre, span{
 
 .grid-container {
   display: grid;
-  grid-template-columns: 20% 60% 20%;
-
+  grid-template-columns: 15% 70% 15%;
 }
 
-form {
+/* form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "i1 i2";
-}
+} */
 
 aside {
     background: #191919;
     color: aliceblue;
-		padding: 50px 0 0 50px;
+		padding: 50px 0 0 20%;
+    min-width: 150px;
+    font-family: "JosefinSans-VariableFont_wght";
 }
 
 
@@ -121,7 +127,9 @@ h2 {
 h4 {
 	font-size: 2rem; margin: 10px 0px 10px 0px;
 }
-
+section {
+  min-height: 700px;
+}
 
 
 
