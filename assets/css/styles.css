@@ -140,6 +140,7 @@ h4 {
 
 footer {
     background-color: #5c5c5c;
-    display: block;
+    display: grid;
     color: aliceblue;
+		
 }
