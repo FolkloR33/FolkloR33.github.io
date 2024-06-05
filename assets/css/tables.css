@@ -17,5 +17,17 @@ th {
 td {
     padding: 0.3rem;
     border: 2px solid #b4b4b4;
+    color: aliceblue;
     min-width: 10px;
+}
+
+.scroll-container {
+    overflow-x: auto;
+
+}
+
+.scroll-content {
+    display: inline-block;
+    white-space: normal;
+    width: 100%; /* Ajustez cette largeur selon vos besoins */
 }

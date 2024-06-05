@@ -3,43 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OptiGF</title>
+    <title>Opti GF</title>
+    <link rel="icon" href="/assets/img/logo.png" />
+    <script src="/assets/js/templates_gf.js"></script>
+    <script src="/assets/js/functions.js"></script>
     <link rel="stylesheet" href="/assets/css/tables.css" />
     <link rel="stylesheet" href="/assets/css/styles.css" />
-    <link rel="icon" href="/assets/img/logo.png" />
-    <script src="/assets/js/gf.js" ></script>
-    <script src="/assets/js/functions.js" ></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const scrollContainer = document.getElementById('scrollContainer');
+
+        scrollContainer.addEventListener('wheel', function(e) {
+            if (e.deltaY > 0) {
+                scrollContainer.scrollLeft += 300;
+            } else {
+                scrollContainer.scrollLeft -= 300;
+            }
+            e.preventDefault();
+        });
+        });
+
+    </script>
   </head>
   <body>
     <header></header>
 
-    <section>
-      <h2>Grand Fantasia</h2>
-    </section>
+    <div class="grid-container">
+      <aside class="left"></aside>
 
-    <aside class="lateral">
-      <h4>Sections :</h4>
-      <ul>
-        <li><a href="/gf/client.ini.html">Client.ini</a></li>
-        <li><a href="/gf/inject.html">Injections</a></li>
-        <li><a href="/gf/ui.html">UserInterface (UI)</a></li>
-        <li><a href="/gf/parser.html">Parses [C_T_].ini</a></li>
-      </ul>
-    </aside>
-
-    <main>
-      <h4>Tableau parser</h4>
-      <div id="tablesContainer">
-        <script src="/assets/js/table1.js"></script>
-        <br />
-        <script src="/assets/js/table2.js"></script>
-        <br />
-        <script src="/assets/js/table3.js"></script>
-        <br />
-      </div>
-    </main>
-
-    <hr style="width: 4000px" />
+      <main>
+        <article>
+          <section>
+            <div class="title">
+              <h2>[Fichiers].ini <img src="/assets/img/gf.png" alt="icon" height="28" /></h2>
+              <p>Tableau récapitulant tous les pipes des fichiers DB </p>
+            </div>
+            <br>
+            <div class="scroll-container" id="scrollContainer">
+              <div class="scroll-content" id="tablesContainer">
+                <script src="/assets/js/table1.js"></script>
+                <br />
+                <script src="/assets/js/table2.js"></script>
+                <br />
+                <script src="/assets/js/table3.js"></script>
+                <br />
+              </div>
+            </div>
+          </section>
+        </article>
+      </main>
+      
+      <aside class="right"></aside>
+    </div>
 
     <footer></footer>
   </body>
