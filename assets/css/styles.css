@@ -23,10 +23,13 @@ body {
 header {
     display: flex;
     background-color: #5c5c5c;
+    font-family: "JosefinSans-VariableFont_wght";
+    font-weight: 900;
 }
 .onglets {
     display: flex;
     align-items: center;
+    text-decoration: none !important;
 }
 h1 {
     color: rgb(0, 0, 0);
@@ -69,31 +72,33 @@ p, pre, span{
 	padding: 0 0 0 10px;
 	border-left: 1px solid ;
 }
-
-.onglets p {
-	color: aliceblue;
-	font-size: 1.2rem;
-}
-
 .onglets a {
-    text-decoration: none;
-    font-size: 16px;
-    color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(255, 255, 255) !important;
+
 }
+.onglets p {
+	color: rgb(0, 0, 0);
+	font-size: 1.2rem;
+  text-shadow: 1px 1px 1px #0000005c;
+}
+
+
 
 .onglets li {
     height: 30px;
-    width: 130px;
-    padding: 0px 10px 0px 10px;
+    width: 150px;
+    padding: 0px 0px 0px 0px;
     margin: 0px 10px 0px 0px ;
     /* background: rgb(142, 142, 142); */
     /* Centrer un unique élément verticalement et horizontalement */
     display: flex;
     justify-content: center;
-    align-items: center;
-		border-color: aliceblue;
-		border: 1px solid aliceblue;
-  
+    align-items: end;
+		border: 2px solid rgb(197, 116, 34);
+    background-color: aliceblue;
+    border-radius: 3px;
 }
 
 .grid-container {
@@ -131,6 +136,10 @@ section {
   min-height: 700px;
 }
 
+.textSide a {
+    text-decoration: underline;
+    color: rgb(197, 116, 34);
+}
 
 
 

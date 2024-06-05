@@ -5,8 +5,8 @@ table {
 
 /* Style pour les en-têtes */
 th {
-    color: azure;
-    background-color: rgb(55, 55, 55);
+    color: rgb(255, 250, 240);
+    background-color: rgba(197, 116, 34, 0.395);
     padding: 0.3rem;
     text-align: center;
     border: 2px solid #b4b4b4;
@@ -17,7 +17,7 @@ th {
 td {
     padding: 0.3rem;
     border: 2px solid #b4b4b4;
-    color: aliceblue;
+    color: rgb(255, 252, 240);
     min-width: 10px;
 }
 
