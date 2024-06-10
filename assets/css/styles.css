@@ -106,12 +106,7 @@ p, pre, span{
   grid-template-columns: 15% 70% 15%;
 }
 
-/* form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "i1 i2";
-} */
+
 
 aside {
     background: #191919;
@@ -132,20 +127,14 @@ h2 {
 h4 {
 	font-size: 2rem; margin: 10px 0px 10px 0px;
 }
-section {
-  min-height: 700px;
+article {
+  min-height: 100vh;
 }
 
 .textSide a {
     text-decoration: underline;
     color: rgb(197, 116, 34);
 }
-
-
-
-
-
-
 
 
 
