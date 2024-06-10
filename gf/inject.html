@@ -7,15 +7,15 @@
     <script src="/assets/js/templates_gf.js"></script>
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <link rel="icon" href="/assets/img/logo.png" />
-    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
     <script>
-      // Initialisez Firebase avec votre configuration
+      // Initialiser Firebase avec votre configuration
       const firebaseConfig = {
-        apiKey: "VOTRE_API_KEY",
-        authDomain: "VOTRE_AUTH_DOMAIN",
-        projectId: "VOTRE_PROJECT_ID",
+        apiKey: "AIzaSyC8xmYTu9BJerJS6n_bAAPnLZWa6wv7Ew4",
+        authDomain: "optigf.firebaseapp.com",
+        projectId: "optigf-d466f",
       };
       firebase.initializeApp(firebaseConfig);
 
@@ -31,17 +31,20 @@
           .then((userCredential) => {
             // Utilisateur inscrit avec succès
             const user = userCredential.user;
-            console.log("Utilisateur inscrit:", user);
             alert("Inscription réussie !");
           })
           .catch((error) => {
             // Gérer les erreurs d'inscription
-            const errorCode = error.code;
             const errorMessage = error.message;
-            console.error("Erreur lors de l'inscription:", errorMessage);
             alert("Erreur lors de l'inscription : " + errorMessage);
           });
       }
+
+      // Attendre que la page soit chargée pour appeler signUp()
+      document.addEventListener("DOMContentLoaded", () => {
+        const signUpButton = document.getElementById("sign-up-button");
+        signUpButton.addEventListener("click", signUp);
+      });
     </script>
   </head>
 
@@ -74,7 +77,8 @@
               <label for="password">Mot de passe :</label>
               <input type="password" id="password" name="password" required />
               <br />
-              <button type="button" onclick="signUp()">S'inscrire</button>
+              <!-- Appel de la fonction signUp() lors du clic sur le bouton -->
+              <button type="button" id="sign-up-button">S'inscrire</button>
             </form>
           </section>
         </article>
