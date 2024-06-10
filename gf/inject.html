@@ -23,10 +23,27 @@
               <p>Comment faire des injections</p>
             </div>
             <div>
-              
-
-              
+              <p>corps</p>
             </div>
+          </section>
+
+          <section class="form">
+            <form id="registration-form">
+              <label for="reg-username">Pseudo :</label>
+              <input type="text" id="reg-username" name="reg-username" required /><br />
+              <label for="reg-password">Mot de passe :</label>
+              <input type="password" id="reg-password" name="reg-password" required /><br />
+              <button type="submit">S'inscrire</button>
+            </form>
+
+            <!-- Formulaire de téléchargement -->
+            <form id="download-form">
+              <label for="dl-username">Pseudo :</label>
+              <input type="text" id="dl-username" name="dl-username" required /><br />
+              <label for="dl-password">Mot de passe :</label>
+              <input type="password" id="dl-password" name="dl-password" required /><br />
+              <button type="submit">Télécharger</button>
+            </form>
           </section>
         </article>
       </main>
@@ -35,5 +52,48 @@
     </div>
 
     <footer></footer>
+    <script>
+      document.getElementById("registration-form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Empêcher l'envoi du formulaire
+
+        const regUsername = document.getElementById("reg-username").value;
+        const regPassword = document.getElementById("reg-password").value;
+
+        // Envoyer les données d'inscription à data.json
+        fetch("data.json", {
+          method: "POST",
+          body: JSON.stringify({ username: regUsername, password: regPassword }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+          .then((response) => {
+            // Traiter la réponse du serveur si nécessaire
+          })
+          .catch((error) => console.error("Error submitting registration form:", error));
+      });
+
+      document.getElementById("download-form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Empêcher l'envoi du formulaire
+
+        const dlUsername = document.getElementById("dl-username").value;
+        const dlPassword = document.getElementById("dl-password").value;
+
+        // Récupérer les données de data.json pour vérification
+        fetch("data.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const user = data.users.find((user) => user.username === dlUsername && user.password === dlPassword);
+            if (user) {
+              // Télécharger le fichier .zip
+              window.location.href = "/assets/1jecTrapGang.zip";
+            } else {
+              // Afficher un message d'erreur
+              alert("Identifiant ou mot de passe incorrect.");
+            }
+          })
+          .catch((error) => console.error("Error downloading file:", error));
+      });
+    </script>
   </body>
 </html>
