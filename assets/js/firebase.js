@@ -3,7 +3,7 @@ var firebaseConfig {
     authDomain: "optigf.firebaseapp.com",
     projectId: "optigf-d466f",
     storageBucket: "optigf-d466f.appspot.com"
-  
+}
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   
