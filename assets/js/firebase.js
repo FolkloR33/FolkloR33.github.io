@@ -1,6 +1,6 @@
 var firebaseConfig = {
     
-    apiKey: "GITHUB_FIREBASE_API",
+    apiKey: "${{ secrets.FIREBASE_API }}",
     authDomain: "optigf.firebaseapp.com",
     projectId: "optigf-d466f",
     storageBucket: "optigf-d466f.appspot.com"
