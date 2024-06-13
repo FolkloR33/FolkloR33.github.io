@@ -10,19 +10,18 @@
     <link rel="stylesheet" href="/assets/css/tables.css" />
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const scrollContainer = document.getElementById('scrollContainer');
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollContainer = document.getElementById("scrollContainer");
 
-        scrollContainer.addEventListener('wheel', function(e) {
-            if (e.deltaY > 0) {
-                scrollContainer.scrollLeft += 300;
-            } else {
-                scrollContainer.scrollLeft -= 300;
-            }
-            e.preventDefault();
+        scrollContainer.addEventListener("wheel", function (e) {
+          if (e.deltaY > 0) {
+            scrollContainer.scrollLeft += 300;
+          } else {
+            scrollContainer.scrollLeft -= 300;
+          }
+          e.preventDefault();
         });
-        });
-
+      });
     </script>
   </head>
   <body>
@@ -36,9 +35,9 @@
           <section>
             <div class="title">
               <h2>[Fichiers].ini <img src="/assets/img/gf.png" alt="icon" height="28" /></h2>
-              <p>Tableau récapitulant tous les pipes des fichiers DB </p>
+              <p>Tableau récapitulant tous les pipes des fichiers DB</p>
             </div>
-            <br>
+            <br />
             <div class="scroll-container" id="scrollContainer">
               <div class="scroll-content" id="tablesContainer">
                 <script src="/assets/js/table1.js"></script>
@@ -47,12 +46,14 @@
                 <br />
                 <script src="/assets/js/table3.js"></script>
                 <br />
+                <script src="/assets/js/table4.js"></script>
+                <br />
               </div>
             </div>
           </section>
         </article>
       </main>
-      
+
       <aside class="right"></aside>
     </div>
 

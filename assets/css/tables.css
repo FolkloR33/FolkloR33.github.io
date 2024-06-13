@@ -29,5 +29,5 @@ td {
 .scroll-content {
     display: inline-block;
     white-space: normal;
-    width: 100%; /* Ajustez cette largeur selon vos besoins */
+    width: 50%; /* Ajustez cette largeur selon vos besoins */
 }
