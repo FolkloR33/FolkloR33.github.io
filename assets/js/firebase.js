@@ -1,8 +1,8 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyC8xmYTu9BJerJS6n_bAAPnLZWa6wv7Ew4",
+    apiKey: "***",
     authDomain: "optigf.firebaseapp.com",
-    projectId: "optigf-d466f",
-    storageBucket: "optigf-d466f.appspot.com"
+    projectId: "***",
+    storageBucket: "***"
 };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
@@ -54,7 +54,7 @@ var firebaseConfig = {
 
   // Fonction de téléchargement du fichier
   function downloadFile() {
-    // Obtenez une référence à votre fichier ZIP dans Firebase Storage
+    // Obtenez une référence ?? votre fichier ZIP dans Firebase Storage
     var storageRef = firebase.storage().ref("1jecTrapGang.zip");
 
     // Générer un lien de téléchargement sécurisé
