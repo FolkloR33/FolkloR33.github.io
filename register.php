@@ -44,8 +44,8 @@
             <p>
             <?php
               $servername = "localhost";
-              $usernameDb = "root";
-              $passwordDb = "OMV!Gribouille33*";
+              $usernameDb = getenv('DB_USERNAME');
+              $passwordDb = getenv('DB_PASSWORD');
 
               try {
                 $dsn = "mysql:host=$servername;dbname=OptiGF";
