@@ -42,7 +42,7 @@
             <br>
             <br>
             <p>
-            <?php
+            <?php //register.php
               $servername = "localhost";
               $usernameDb = getenv('DB_USERNAME');
               $passwordDb = getenv('DB_PASSWORD');
