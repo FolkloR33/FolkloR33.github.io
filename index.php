@@ -1,12 +1,26 @@
+<?php
+
+$texte = "Hello World";
+$int = 1234;
+$float = 1.5;
+$tableau = [1,2,3];
+$somme = $float + $int;
+
+
+//Y^SjN9$q0f{4DO{2hVgEPK-nfG*lQnom
+//opt/lampp/phpmyadmin/config.inc.php
+
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OptiGF</title>
-    <script src="/assets/js/templates.js" defer></script>
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-    <link rel="icon" href="/assets/img/logo.png" />
+    <script src="/www/assets/js/templates.js" defer></script>
+    <link rel="stylesheet" href="/www/assets/css/styles.css" />
+    <link rel="icon" href="/www/assets/img/logo.png" />
   </head>
 
   <body>
