@@ -69,7 +69,7 @@
                               ]);
                   
                               setcookie("token", $token, time() + 1800, "/", "", true, true); // Secure cookie options
-                              setcookie("username", $login, time() + 1800, "/", "", true, true);
+                              setcookie("login", $login, time() + 1800, "/", "", true, true);
                   
                               header("Location:/www/myAccount.php");
                               exit;

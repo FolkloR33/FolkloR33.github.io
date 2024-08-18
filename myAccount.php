@@ -12,8 +12,8 @@ try {
     die("Erreur : " . $e->getMessage());
 }
 
-if (isset($_COOKIE['username']) && isset($_COOKIE['token'])) {
-    $login = $_COOKIE['username'];
+if (isset($_COOKIE['login']) && isset($_COOKIE['token'])) {
+    $login = $_COOKIE['login'];
     $token = $_COOKIE['token'];
 
     $req = $bdd->prepare("SELECT * FROM users WHERE login = :login AND token = :token");
