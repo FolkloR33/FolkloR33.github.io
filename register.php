@@ -45,7 +45,7 @@
             <?php
               $servername = "localhost";
               $usernameDb = "root";
-              $passwordDb = "OMV!Gribouille33*";
+              $passwordDb = "***";
 
               try {
                 $dsn = "mysql:host=$servername;dbname=OptiGF";
