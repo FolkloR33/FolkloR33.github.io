@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OptiGF / GF</title>
+    <script src="/www/assets/js/templates_gf.js"></script>
+    <link rel="stylesheet" href="/www/assets/css/styles.css" />
+    <link rel="icon" href="/www/assets/img/logo.png" />
+    <script defer src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/10.9.0/firebase-storage-compat.js"></script>
+    <script defer src="/www/assets/js/firebase.js"></script>
+  </head>
+
+  <body>
+    <header></header>
+
+    <div class="grid-container">
+      <aside class="left"></aside>
+
+      <main>
+        <div class="title">
+          <h2>Injections <img src="/www/assets/img/gf.png" alt="icon" height="28" /></h2>
+          <p>Comment faire des injections</p>
+        </div>
+
+        <article>
+          <section>
+            <div>
+              <p>corps</p>
+            </div>
+          </section>
+        </article>
+
+        <form class="flexbox" style="justify-content:space-between; color: aliceblue;" >
+          <div id="inscription" style="text-align: center;">
+            <h3>Inscription avec Firebase</h3>
+            <input type="email" id="email" name="email" placeholder="email" required />
+            <br />
+            <input type="password" id="password" name="password" placeholder="mot de passe" required />
+            <br />
+            <!-- Appel de la fonction signUp() lors du clic sur le bouton -->
+            <button type="button" id="sign-up-button">S'inscrire</button>
+          </div>
+
+          <div id="connexion" style="text-align: center;">
+            <h3>Connexion avec Firebase</h3>
+            <input type="email" id="login-email" name="login-email" placeholder="email" required />
+            <br />
+            <input type="password" id="login-password" name="login-password" placeholder="mot de passe" required />
+            <br />
+            <!-- Appel de la fonction signIn() lors du clic sur le bouton -->
+            <button type="button" id="login-button">Se connecter</button>
+            <!-- Bouton de téléchargement -->
+            <button type="button" id="download-button" style="display: none">Télécharger le fichier</button>
+          </div>
+        </form>
+      </main>
+
+      <aside class="right"></aside>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OptiGF / GF</title>
+    <link rel="icon" href="/www/assets/img/logo.png" />
+    <script src="/www/assets/js/templates_gf.js"></script>
+    <script src="/www/assets/js/functions.js"></script>
+    <link rel="stylesheet" href="/www/assets/css/tables.css" />
+    <link rel="stylesheet" href="/www/assets/css/styles.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollContainer = document.getElementById("scrollContainer");
+
+        scrollContainer.addEventListener("wheel", function (e) {
+          if (e.deltaY > 0) {
+            scrollContainer.scrollLeft += 300;
+          } else {
+            scrollContainer.scrollLeft -= 300;
+          }
+          e.preventDefault();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header></header>
+
+    <div class="grid-container">
+      <aside class="left"></aside>
+
+      <main>
+        <article>
+          <section>
+            <div class="title">
+              <h2>[Fichiers].ini <img src="/www/assets/img/gf.png" alt="icon" height="28" /></h2>
+              <p>Tableau récapitulant tous les pipes des fichiers DB</p>
+            </div>
+            <br />
+            <div class="scroll-container" id="scrollContainer">
+              <div class="scroll-content" id="tablesContainer">
+                <script src="/www/assets/js/table1.js"></script>
+                <br />
+                <script src="/www/assets/js/table2.js"></script>
+                <br />
+                <script src="/www/assets/js/table3.js"></script>
+                <br />
+                <script src="/www/assets/js/table4.js"></script>
+                <br />
+              </div>
+            </div>
+          </section>
+        </article>
+      </main>
+
+      <aside class="right"></aside>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

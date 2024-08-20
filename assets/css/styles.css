@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Acme";
+    src: url(/www/assets/fonts/Acme.ttf);
+  }
+  @font-face {
+    font-family: "JosefinSans-VariableFont_wght";
+    src: url(/www/assets/fonts/JosefinSans-VariableFont_wght.ttf);
+  }
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+		text-decoration: none;
+}
+body {
+	background-color: #1f1f1f;
+  
+}
+
+.flexbox {
+    display: flex;
+}
+header {
+    display: flex;
+    background-color: #5c5c5c;
+    font-family: "JosefinSans-VariableFont_wght";
+    font-weight: 900;
+}
+.onglets {
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+}
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: "Acme";
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 4px #00000091;
+}
+.title {
+    text-align: center;
+}
+p, pre, span{
+	font-size: 1.2rem;
+	color: aliceblue;
+	text-decoration: none !important;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.left {
+	grid-column: 1;
+
+}
+.middle {
+	grid-column: 2;
+}
+.right {
+  grid-column: 3;
+}
+
+
+
+/* éléments uniques */
+
+.SIDE li {
+	margin-left: 20px;
+	padding: 0 0 0 10px;
+	border-left: 1px solid ;
+}
+.onglets a {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(255, 255, 255) !important;
+
+}
+.onglets p {
+	color: rgb(0, 0, 0);
+	font-size: 1.2rem;
+  text-shadow: 1px 1px 1px #0000005c;
+}
+
+
+
+.onglets li {
+    height: 30px;
+    width: 150px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 10px 0px 0px ;
+    /* background: rgb(142, 142, 142); */
+    /* Centrer un unique élément verticalement et horizontalement */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+		border: 2px solid rgb(197, 116, 34);
+    background-color: aliceblue;
+    border-radius: 3px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+}
+
+
+
+aside {
+    background: #191919;
+    color: aliceblue;
+		padding: 50px 0 0 20%;
+    min-width: 150px;
+    font-family: "JosefinSans-VariableFont_wght";
+}
+
+
+
+h2 {
+    margin: 10px 0px 0px 0px;
+    font-family: "Acme";
+    font-size: 1.8rem;
+		color: aliceblue;
+}
+h4 {
+	font-size: 2rem; margin: 10px 0px 10px 0px;
+}
+article {
+  min-height: 75vh;
+}
+
+.textSide a {
+    text-decoration: underline;
+    color: rgb(197, 116, 34);
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #5c5c5c;
+    display: grid;
+    color: aliceblue;
+}

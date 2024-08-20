@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OptiGF / GF</title>
+    <script src="/www/assets/js/templates_gf.js"></script>
+    <link rel="stylesheet" href="/www/assets/css/styles.css" />
+    <link rel="icon" href="/www/assets/img/logo.png" />
+  </head>
+
+  <body>
+    <header></header>
+
+    <div class="grid-container">
+      <aside class="left"></aside>
+
+      <main>
+        <article>
+          <section>
+            <div class="title">
+              <h2>Client.ini <img src="/www/assets/img/gf.png" alt="icon" height="28" /></h2>
+              <br /><br />
+              <p style="color: brown"><strong>Rouge =</strong> Obligatoire</p>
+              <p style="color: orange"><strong>Orange =</strong> Conseillé</p>
+              <p style="color: green"><strong>Vert =</strong> Modifiable à souhait</p>
+              <p style="color: violet"><strong>Violet =</strong> Réglage non connu = suggestions plz</p>
+              <p><strong>Blanc =</strong> Réglage inactif / inutile</p>
+            </div>
+            <br /><br /><br />
+            <div>
+              <pre style="padding-left: 10%">
+[Connect]
+<strong style="color: brown;">ServerNum=1</strong>  // Numéro du serveur à connecter
+
+
+[Language]
+<strong style="color: brown;">Locate=1</strong>  // Langue du jeu (1 signifie probablement le chinois simplifié)
+
+
+[Option]
+<strong style="color: orange;">FullScreenMode=1</strong>  // Mode plein écran (0 - 1)
+<strong style="color: orange;">ScreenWidth=1860</strong>  // Largeur de l'écran en pixels
+<strong style="color: orange;">ScreenHeight=1080</strong>  // Hauteur de l'écran en pixels
+<strong>ScreenFrequency=60</strong>  // Fréquence de rafraîchissement de l'écran en Hz (pas lue si new exe téléchargé)
+
+<strong style="color: orange;">ViewCharacterRange=20</strong>  // Distance où les costumes des personnages sont chargés (1 - 40)
+<strong style="color: orange;">ViewRange=1</strong>  // Distance de visibilité des objets de la scène (1 - 5)
+<strong style="color: orange;">CharacterEffectNum=1</strong>  // Effets tq. sorts ou nucléus (1 - 25 mais 1 ou 2 suffisent)
+
+// (1 Aucun / 2 Seulement soi / 3 Tous)
+<strong style="color: brown;">ShadowLevel=1</strong>  // Affichage des ombres (1 - 3)
+<strong style="color: brown;">ShadowType=1</strong>  // Qualité des ombres (1 - 5)
+<strong style="color: brown;">CharacterTexture=0</strong>  // Qualité des textures des personnages
+<strong style="color: brown;">SceneTexture=0</strong>  // Qualité des textures des scènes
+
+<strong style="color: brown;">MaxAnisotropic=1</strong>  // Niveau de filtrage anisotrope des textures
+<strong style="color: orange;">PPMonochrome=0</strong>  // Effet N&B Acquisition titre ou GvG (0 - 1)
+<strong style="color: violet;">PPSepia=0</strong>  // Effet sépia (0 - 1)
+<strong style="color: brown;">DepthOfField=0</strong>  // Effet de profondeur de champ (0 - 1 )
+
+<strong style="color: brown;">FpsLockValue=900</strong>  // Limite du nombre d'images par seconde 
+<strong style="color: brown;">DynamicVideoSetting=0</strong>  // Optimisation dynamique des graphismes (0 - 1)
+
+// Verrouillage des barres d'état supplémentaires (0 - 1)
+<strong style="color: green;">EnchantListLock0=0</strong>
+<strong style="color: green;">EnchantListLock1=0</strong>
+<strong style="color: green;">EnchantListLock2=0</strong>
+<strong style="color: green;">EnchantListLock3=0</strong>
+<strong style="color: green;">EnchantListLock4=0</strong>
+
+// Activer (ou non) les barres d'états supplémentaires
+<strong style="color: green;">TargetEnchantListP=1</strong>  // Buffs cible (0 - 1)
+<strong style="color: green;">TargetEnchantListN=1</strong>  // Débuffs cible (0 - 1)
+<strong style="color: green;">PlayerEnchantListQuick=1</strong>  // Effets temporaires sur soi (0 - 1)
+<strong style="color: green;">PlayerEnchantListP=1</strong>  // Buffs sur soi (0 - 1)
+<strong style="color: green;">PlayerEnchantListN=1</strong>  // Débuffs sur soi (0 - 1)
+
+<strong style="color: orange;">BattleReport=1</strong>  // Fonction de calcul des dommages (0 - 1)
+<strong style="color: green;">ReportWndLock=0</strong>  // Verrouillage de la fenêtre de calcul des dommages (0 - 1)
+
+<strong style="color: green;">BGMType=2</strong>  // Mode de lecture des musiques (0 - 2)
+<strong style="color: green;">BGMValoume=0</strong>.0  // Volume musique (0.0 - 1.0)
+<strong style="color: green;">SoundValoume=0</strong>.4  // Volume des effets sonores (0.0 - 1.0)
+<strong style="color: green;">SoundMute=0</strong>  // Sourdine (0 - 1)
+
+<strong style="color: green;">MouseSpeed=8</strong>  // Vitesse de la souris (1 - 20)
+
+<strong style="color: orange;">SelfConjuration=0</strong>  // Auto-sort pour soi-même (0 - 1)
+
+<strong style="color: orange;">PlayerName=1</strong>  // Affichage des noms des joueurs (0 - 1)
+<strong style="color: orange;">PlayerFamily=1</strong>  // Affichage des noms des guildes (0 - 1)
+<strong style="color: orange;">PlayerAppellation=1</strong>  // Affichage des titres (0 - 1)
+<strong style="color: green;">ShowArmet=1</strong>  // Affichage des casques (0 - 1)
+<strong style="color: green;">ShowCloak=1</strong>  // Affichage des capes (0 - 1)
+<strong style="color: orange;">NpcName=1</strong>  // Affichage des noms des NPC (0 - 1)
+<strong style="color: orange;">HIDUI=1</strong>  // Lissage polices (0 - 1)
+<strong style="color: green;">PlayerLife=0</strong>  // Valeur des PV joueur (0 - 1)
+<strong style="color: orange;">EnemyLife=1</strong>  // Valeur des PV ennemis (0 - 1)
+
+<strong style="color: brown;"></strong>OthersDamage=0  // Valeurs dommages autres joueurs (0 - 1)
+<strong style="color: orange;">PlayerBlood=1</strong>  // Valeurs dégâts subis
+
+<strong style="color: green;">RejectTrade=0</strong>  // Refus des échanges (0 - 1)
+<strong style="color: green;">RejectDuel=0</strong>  // Refus des duels (0 - 1)
+<strong style="color: green;">RejectCoRide=0</strong>  // Refus partage monture (0 - 1)
+<strong style="color: green;">RejectElfBetGames=0</strong>  // Refus défis sprites (0 - 1)
+<strong style="color: green;">RejectCoSitChair=0</strong>  // Refus partage trône
+
+<strong style="color: orange;">NotifyMission=0</strong>  // Livres de quêtes clignotantes
+<strong style="color: violet;">SimplfyTips=0</strong>  // Affichage simplifié conseils (0 - 1)
+<strong style="color: green;">AutoSortConfirm=0</strong>  // Confirmation de tri sac (0 - 1)
+<strong style="color: orange;">TargetTargetUI=1</strong>  // Interface cible de la cible (0 - 1)
+
+<strong style="color: violet;">FastBar=1</strong>  //???? Affichage rapide (0 - 1)
+<strong style="color: violet;">RotateGroundCircle=1</strong>  //???? Effets du cercle magique activés (0 - 1)
+<strong style="color: violet;">ReinforceTrace=1</strong>  //???? Suivi du renforcement activé
+<strong style="color: violet;">Enhide=0</strong>  //???? Effets des objets (0 - 1)
+<strong style="color: violet;">ScreenLevel=0</strong>  //???? Niveau de détail de l'affichage (0 - 2)
+<strong style="color: violet;">KeyboardMode=0</strong>  //???? Mode clavier (0 - 1)
+
+
+[Channel]
+// Noms tchatX
+<strong style="color: green;">ChannelGroupName1=Tchat</strong>
+<strong style="color: green;">ChannelGroupName2=Sys</strong>
+<strong style="color: green;">ChannelGroupName3=Autre</strong>
+<strong style="color: green;">ChannelGroupName4=Combat</strong>
+
+// Quels canaux sont appliqués
+<strong style="color: green;">ChannelGroupValue1=8319</strong>  
+<strong style="color: green;">ChannelGroupValue2=4200450</strong>
+<strong style="color: green;">ChannelGroupValue3=2560</strong>
+<strong style="color: green;">ChannelGroupValue4=128</strong>
+
+<strong style="color: violet;">RightChannelGroup=2</strong>  //???? Quel channel à droite (0 -5)
+<strong style="color: violet;">ChannelVersion=3</strong>  //???? Version des canaux
+<strong style="color: violet;">SaveTga=0</strong>  //???? Sauvegarde en format TGA désactivée
+
+<strong style="color: orange;">NewShortcutShow=2</strong>  // Affichage partiel nouvelle barre de raccourcis (0 - 2)
+<strong style="color: green;">ShortcutLock=0</strong>  // Verrouillage de la barre de raccourcis (0 - 1)
+<strong style="color: green;">ShowMissionTrace=1</strong>  // Suivi des quêtes (0 - 1)
+
+// Alarmes (0 - 1)
+<strong>TinyClockAlarm1=0</strong>
+<strong>TinyClockAlarm2=0</strong>
+<strong>TinyClockAlarm3=0</strong>
+
+// Page des elfes
+<strong style="color: orange;">ElfPage=0</strong>  // Page des elfes (0 - 2)
+
+[MapOption]
+// Affichage des filtres de la carte (0 - 1)
+<strong style="color: orange;">MapGateway=1</strong>  // Téléporteur
+<strong style="color: orange;">MapCity=1</strong>  // Ville
+<strong style="color: orange;">MapMissionGet=1</strong>  // Quêtes dispo
+<strong style="color: orange;">MapMissionGain=1</strong>  // Quêtes terminées
+<strong style="color: orange;">MapIndex=1</strong>  // Index de la carte
+
+[Other Option]
+<strong>Account=</strong>  // Compte utilisateur (0 - 1)
+<strong>Activity=0</strong>  // Activité (0 - 1)
+<strong>AutoLogin=0</strong>  // Connexion automatique (0 - 1)
+<strong style="color: green;">FilterFinished=0</strong>  // Filtrage des missions terminées (0 - 1)
+<strong style="color: brown;">Renderer=0</strong>  // Rendu graphique
+<strong style="color: green;">DynamicEventFirst=1</strong>  // Afficher les éléments programmés (0 - 1)
+<strong style="color: orange;">DetailAttrRefreshTime=0.5</strong>  // CD attributs détaillés (en secondes)
+<strong style="color: green;">FristTimeSettingHidePlayer=0</strong>  // Masquer les autres joueurs au premier réglage (0 - 1)
+<strong style="color: green;">HideOtherPlayer=0</strong>  // Masquage des autres joueurs (0 - 1)
+<strong style="color: violet;">PKPalaceOpponentListPosX=1542</strong>  //???? Position X de la liste des adversaires dans le PK Palace
+<strong style="color: violet;">PKPalaceOpponentListPosY=63</strong>  //???? Position Y de la liste des adversaires dans le PK Palace
+              </pre>
+            </div>
+          </section>
+        </article>
+      </main>
+
+      <aside class="right"></aside>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

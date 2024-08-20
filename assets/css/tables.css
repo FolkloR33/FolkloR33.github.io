@@ -1,0 +1,33 @@
+table {
+    border-collapse: collapse;
+    width: 100%; /* Largeur totale du tableau */
+}
+
+/* Style pour les en-têtes */
+th {
+    color: rgb(255, 250, 240);
+    background-color: rgba(197, 116, 34, 0.395);
+    padding: 0.3rem;
+    text-align: center;
+    border: 2px solid #b4b4b4;
+    min-width: 10px;
+}
+
+/* Style pour les cellules */
+td {
+    padding: 0.3rem;
+    border: 2px solid #b4b4b4;
+    color: rgb(255, 252, 240);
+    min-width: 10px;
+}
+
+.scroll-container {
+    overflow-x: auto;
+
+}
+
+.scroll-content {
+    display: inline-block;
+    white-space: normal;
+    width: 50%; /* Ajustez cette largeur selon vos besoins */
+}
