@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Charger et insérer le aside droit
     loadTemplate('_right_aside', 'aside.right');
     // Charger et insérer le aside droit
-    loadTemplate('gf/_gf_left_aside', 'aside.left');
+    loadTemplate('_gf/_gf_left_aside', 'aside.left');
     // Charger et insérer le footer
     loadTemplate('_footer', 'footer');
 });
