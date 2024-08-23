@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     }
     // Charger et insérer le header
-    loadTemplate('/www/_header', 'header');
+    loadTemplate('_header', 'header');
     // Charger et insérer le aside droit
-    loadTemplate('/www/_right_aside', 'aside.right');
+    loadTemplate('_right_aside', 'aside.right');
     // Charger et insérer le aside droit
-    loadTemplate('/www/windows/_win_left_aside', 'aside.left');
+    loadTemplate('_windows/_win_left_aside', 'aside.left');
     // Charger et insérer le footer
-    loadTemplate('/www/_footer', 'footer');
+    loadTemplate('_footer', 'footer');
 });
