@@ -6,9 +6,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OptiGF - Inscription</title>
-    <script src="/www/assets/js/templates.js" defer></script>
-    <link rel="stylesheet" href="/www/assets/css/styles.css" />
-    <link rel="icon" href="/www/assets/img/logo.png" />
+    <script src="/assets/js/templates.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="icon" href="/assets/img/logo.png" />
   </head>
 
   <body>
@@ -43,7 +43,7 @@
 
 
             <?php
-              include '/www/.env.php';
+              include '/.env.php';
               echo "Connection from '".$usernameDb ."@".$servername."' to '".$nameDb."' ...";echo "<br>";
               try {
                 $dsn = "mysql:host=$servername;port=$port;dbname=$nameDb";
@@ -68,7 +68,7 @@
                     ]);
             
                     if ($success) {
-                        header("Location:/www/login.php");
+                        header("Location:/login.php");
                         exit;
                     } else {
                         echo "L'inscription n'a pas été prise en compte.";
