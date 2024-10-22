@@ -1,6 +1,6 @@
 <?php
 
-include '/www/.env.php';
+include '/.env.php';
 echo "Connection from '".$usernameDb ."@".$servername."' to '".$nameDb."' ...";echo "<br>";
 try {
   $dsn = "mysql:host=$servername;port=$port;dbname=$nameDb";
@@ -27,12 +27,12 @@ try {
         } else {
             echo "Authentification échouée !";
             // Rediriger vers la page de connexion
-            header("Location:/www/login.php");
+            header("Location:/login.php");
             exit;
         }
     } else {
     echo "Vous devez être connecté pour accéder à cette page.";
-    header("Location:/www/login.php");
+    header("Location:/login.php");
     exit;
 }
 

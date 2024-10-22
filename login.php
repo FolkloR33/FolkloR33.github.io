@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OptiGF - Connexion</title>
-    <script src="/www/assets/js/templates.js" defer></script>
-    <link rel="stylesheet" href="/www/assets/css/styles.css" />
-    <link rel="icon" href="/www/assets/img/logo.png" />
+    <script src="/assets/js/templates.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="icon" href="/assets/img/logo.png" />
   </head>
 
   <body>
@@ -39,7 +39,7 @@
             <br>
             <p>
                 <?php
-                  include '/www/.env.php';
+                  include '/.env.php';
                   echo "Connection from '".$usernameDb ."@".$servername."' to '".$nameDb."' ...";echo "<br>";
                   try {
                     $dsn = "mysql:host=$servername;port=$port;dbname=$nameDb";
@@ -70,7 +70,7 @@
                               setcookie("token", $token, time() + 1800, "/", "", true, true); // Secure cookie options
                               
                   
-                              header("Location:/www/myAccount.php");
+                              header("Location:/myAccount.php");
                               exit;
                           } else {
                               echo "Authentification échouée !";
