@@ -22,7 +22,7 @@ body {
 }
 header {
     display: flex;
-    background-color: #5c5c5c;
+    background-color: #da681c5e;
     font-family: "JosefinSans-VariableFont_wght";
     font-weight: 900;
 }
@@ -69,34 +69,28 @@ p, pre, span{
 
 .SIDE li {
 	margin-left: 20px;
-	padding: 0 0 0 10px;
+	padding: 0 0 5px 10px;
 	border-left: 1px solid ;
 }
-.onglets a {
+a.onglets {
   text-decoration: none;
-  font-size: 16px;
-  color: rgb(255, 255, 255) !important;
-
-}
-.onglets p {
-	color: rgb(0, 0, 0);
-	font-size: 1.2rem;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
   text-shadow: 1px 1px 1px #0000005c;
 }
 
 
-
-.onglets li {
+li.onglets {
+    width: auto;
     height: 30px;
-    width: 150px;
-    padding: 0px 0px 0px 0px;
+    padding: 4px 5px 0px 5px;
     margin: 0px 10px 0px 0px ;
     /* background: rgb(142, 142, 142); */
     /* Centrer un unique élément verticalement et horizontalement */
     display: flex;
     justify-content: center;
-    align-items: end;
-		border: 2px solid rgb(197, 116, 34);
+    align-items: center;
+		border: 2px solid rgb(0, 0, 0);
     background-color: aliceblue;
     border-radius: 3px;
 }
@@ -127,9 +121,11 @@ h2 {
 h4 {
 	font-size: 2rem; margin: 10px 0px 10px 0px;
 }
-article {
-  min-height: 75vh;
+main {
+  min-height: calc(100vh - 228px);
+  width: auto;
 }
+
 
 .textSide a {
     text-decoration: underline;
@@ -139,13 +135,8 @@ article {
 
 
 
-
-
-
-
-
 footer {
-    background-color: #5c5c5c;
+    background-color: #da681c5e;
     display: grid;
     color: aliceblue;
 }

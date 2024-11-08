@@ -1,66 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OptiGF / GF</title>
-    <script src="/assets/js/templates_gf.js"></script>
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-    <link rel="icon" href="/assets/img/logo.png" />
-    <script defer src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/10.9.0/firebase-storage-compat.js"></script>
-    <script defer src="/assets/js/firebase.js"></script>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>OptiGF / GF</title>
+        <script src="/assets/js/templates_gf.js"></script>
+        <link rel="stylesheet" href="/assets/css/styles.css" />
+        <link rel="icon" href="/assets/img/logo.png" />
+        <script defer src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/10.9.0/firebase-storage-compat.js"></script>
+        <script defer src="/assets/js/firebase.js"></script>
+    </head>
 
-  <body>
-    <header></header>
+    <body>
+        <header></header>
 
-    <div class="grid-container">
-      <aside class="left"></aside>
+        <div class="grid-container">
+            <aside class="left"></aside>
 
-      <main>
-        <div class="title">
-          <h2>Injections <img src="/assets/img/gf.png" alt="icon" height="28" /></h2>
-          <p>Comment faire des injections</p>
+            <main>
+                <div class="title">
+                    <h2>Injection <img src="/assets/img/gf.png" alt="icon" height="28" /></h2>
+                    <p>Injection de Guilde TrapGang</p>
+                </div>
+
+                <article>
+                    <section>
+                        <div>
+                            <p>Contributeurs:</p>
+                            <br />
+                            <p style="font-size: small">
+                                @azarisama (Azari)<br />
+                                @tzarode (Suprem Chips)<br />
+                                @ori_deck (Ori)<br />
+                                @incouchable (Roi Nidas)<br />
+                                @folklor (Bulle)<br />
+                            </p>
+                            <br />
+                            <p>N'hésitez pas à nous contacter en cas de bugs ou s'il faut effectuer une MAJ du projet.</p>
+                            <!-- Bouton de téléchargement -->
+                            <br />
+                            <p style="font-style: italic">Pour demander l'accès à l'injection, vous devez être membre de la guilde et avoir le rôle "Mafioso"</p>
+                            <p>Toutes les informations sont indiquées dans le <a href="https://discord.gg/BDyXBHnZ8u" target="_blank">Discord TrapGang</a></p>
+                            <br />
+                            <p>N'hésitez pas à nous rejoindre !</p>
+                            <!-- <button type="button" id="download-button" style="display: block"><a href="/assets/1jecTrapGang.zip">Télécharger le ZIP</a></button> -->
+                        </div>
+                    </section>
+                </article>
+            </main>
+
+            <aside class="right"></aside>
         </div>
 
-        <article>
-          <section>
-            <div>
-              <p>corps</p>
-            </div>
-          </section>
-        </article>
-
-        <form class="flexbox" style="justify-content:space-between; color: aliceblue;" >
-          <div id="inscription" style="text-align: center;">
-            <h3>Inscription avec Firebase</h3>
-            <input type="email" id="email" name="email" placeholder="email" required />
-            <br />
-            <input type="password" id="password" name="password" placeholder="mot de passe" required />
-            <br />
-            <!-- Appel de la fonction signUp() lors du clic sur le bouton -->
-            <button type="button" id="sign-up-button">S'inscrire</button>
-          </div>
-
-          <div id="connexion" style="text-align: center;">
-            <h3>Connexion avec Firebase</h3>
-            <input type="email" id="login-email" name="login-email" placeholder="email" required />
-            <br />
-            <input type="password" id="login-password" name="login-password" placeholder="mot de passe" required />
-            <br />
-            <!-- Appel de la fonction signIn() lors du clic sur le bouton -->
-            <button type="button" id="login-button">Se connecter</button>
-            <!-- Bouton de téléchargement -->
-            <button type="button" id="download-button" style="display: none">Télécharger le fichier</button>
-          </div>
-        </form>
-      </main>
-
-      <aside class="right"></aside>
-    </div>
-
-    <footer></footer>
-  </body>
+        <footer></footer>
+    </body>
 </html>
